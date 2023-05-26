@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        rbgJS = function (red = 0, green = 0, blue = 0) {
+            return 'rgb(' + red + ', ' + green + ', ' + blue + ')';
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            var googleTitle = document.querySelector(".google-title");
+            var text = googleTitle.textContent;
+            var coloredTitle = "";
+            for (var i = 0; i < text.length; i++) {
+                var letter = text.charAt(i);
+                var color = "";
+                if (i === 0 || i === 3 || i >= 6) {
+                    color = rbgJS(0, 123, 255);
+                } else if (i === 1 || i === 5) {
+                    color = rbgJS(224, 56, 0);
+                } else if (i === 2) {
+                    color = rbgJS(255, 230, 5);
+                } else if (i === 4) {
+                    color = rbgJS(0, 209, 49);
+                }
+                coloredTitle += "<span style='color: " + color + "'>" + letter + "</span>";
+            }
+            googleTitle.innerHTML = coloredTitle;
+        });
+    </script>
+</head>
+<body>
+    <div class="google-links">
+        <a href="google_images.html">Google Images</a>
+        <a href="google_adv_search.html">Google Advanced Search</a>
+    </div>
+    <form class="search-form" action="https://www.google.com/search">
+        <div><h1 class="google-title">Google</h1></div>
+        <div>
+            <input type="text" name="q">
+        </div>
+        <div>
+            <input type="submit" value="Google Search">
+            <input type="submit" value="I am feeling lucky" name="btnI">
+        </div>
+    </form>
+</body>
+</html>
