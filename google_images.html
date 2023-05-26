@@ -3,31 +3,7 @@
 <head>
     <title>Search Images</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        rbgJS = function (red = 0, green = 0, blue = 0) {
-            return 'rgb(' + red + ', ' + green + ', ' + blue + ')';
-        }
-        document.addEventListener("DOMContentLoaded", function() {
-            var googleTitle = document.querySelector(".google-title");
-            var text = googleTitle.textContent;
-            var coloredTitle = "";
-            for (var i = 0; i < text.length; i++) {
-                var letter = text.charAt(i);
-                var color = "";
-                if (i === 0 || i === 3 || i >= 6) {
-                    color = rbgJS(0, 123, 255);
-                } else if (i === 1 || i === 5) {
-                    color = rbgJS(224, 56, 0);
-                } else if (i === 2) {
-                    color = rbgJS(255, 230, 5);
-                } else if (i === 4) {
-                    color = rbgJS(0, 209, 49);
-                }
-                coloredTitle += "<span style='color: " + color + "'>" + letter + "</span>";
-            }
-            googleTitle.innerHTML = coloredTitle;
-        });
-    </script>
+    <script src="google_title.js"></script>
 </head>
 <body>
     <div class="google-links">
@@ -37,9 +13,10 @@
         <div><h1 class="google-title">Google</h1><h2 class="image-subtitle">Images</h2></div>
         <div>
             <input type="text" name="q">
+            <input type="hidden" value="isch" name="tbm">
         </div>
         <div>
-            <input type="submit" value="isch">
+            <input type="submit" value="Image Search">
         </div>
     </form>
 </body>

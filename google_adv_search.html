@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    </style>
+    <script src="google_title.js"></script>
+</head>
+<body>
+    <div class="google-links">
+        <a href="index.html">Google Search</a>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center; margin-left: 10px; margin: 20px;">
+        <h1 class="google-title" style="font-size: 36px;">Google</h1>
+        <h2 class="adv-search-subtitle">Advanced Search</h2>
+    </div>
+    <form class="adv-search-form" action="https://www.google.com/search" value="isch" name="tbm">
+        <div class="adv-search-specification">
+            <h6>Find pages with...</h6>
+        </div>
+        <div class="adv-search-specification">
+            <h6>all these words:</h6>
+            <input type="text" name="q">
+            <h6 class="adv-search-examples">Type the important words:  tricolor rat terrier</h6>
+        </div>
+        <div class="adv-search-specification">
+            <h6>this exact word or phrase:</h6>
+            <input type="text" name="q">
+            <h6>Put exact words in quotes:  "rat terrier"</h6>
+        </div>
+        <div class="adv-search-specification">
+            <h6>any of these words:</h6>
+            <input type="text" name="q">
+            <h6>Type OR between all the words you want:  miniature OR standard</h6>
+        </div>
+        <div class="adv-search-specification">
+            <h6>none of these words:</h6>
+            <input type="text" name="q">
+            <h6>Put a minus sign just before words you don't want:  -rodent, -"Jack Russell"</h6>
+        </div>
+        <div class="adv-search-div">
+            <input type="submit" value="Advanced Search">
+        </div>
+    </form>
+</body>
+</html>
