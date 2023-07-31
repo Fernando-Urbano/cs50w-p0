@@ -1,6 +1,9 @@
 # Google Search Front End
 This is project number 0 of the CS50 Web Development course with Django and JavaScript lectured by Harvard CS department.
 
+## Screencast of project
+https://www.youtube.com/watch?v=SXrAMlacNqA&feature=youtu.be
+
 The project is composed of 3 html files:
 - index.html: for default google searchs
 - google_images.html: for google images search
