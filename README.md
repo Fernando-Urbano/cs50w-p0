@@ -2,7 +2,7 @@
 This is project number 0 of the CS50 Web Development course with Django and JavaScript lectured by Harvard CS department.
 
 ## Screencast of project
-https://www.youtube.com/watch?v=SXrAMlacNqA&feature=youtu.be
+[![image](https://github.com/Fernando-Urbano/google-search-front-end/assets/99626376/39400514-be94-43ba-98cd-934c4c6da9da)](https://www.youtube.com/watch?v=SXrAMlacNqA&feature=youtu.be)
 
 The project is composed of 3 html files:
 - index.html: for default google searchs
